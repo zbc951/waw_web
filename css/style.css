@@ -4277,6 +4277,12 @@ html body .mainAnime .enterBtn .wrapper_3 i {
     -webkit-transform: scale(0);
             transform: scale(0);
   }
+  80% {
+    opacity: 0;
+    border: solid 2px #ffffff;
+    -webkit-transform: scale(2.5);
+            transform: scale(2.5);
+  }
   100% {
     opacity: 0;
     border: solid 2px #ffffff;
@@ -4294,6 +4300,12 @@ html body .mainAnime .enterBtn .wrapper_3 i {
     border: solid 2px #ffffff;
     -webkit-transform: scale(0);
             transform: scale(0);
+  }
+  80% {
+    opacity: 0;
+    border: solid 2px #ffffff;
+    -webkit-transform: scale(2.5);
+            transform: scale(2.5);
   }
   100% {
     opacity: 0;

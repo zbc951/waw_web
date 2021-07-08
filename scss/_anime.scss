@@ -1404,6 +1404,12 @@
         transform: scale(0);
     }
 
+    80% {
+        opacity: 0;
+        border: solid 2px #ffffff;
+        transform: scale(2.5);
+    }
+
     100% {
         opacity: 0;
         border: solid 2px #ffffff;
