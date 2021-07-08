@@ -1580,25 +1580,25 @@ html {
                         height: 100%;
                         left: 0px;
                         top: 0px;
-                        animation: wave4 1.8s linear 0s infinite;
+                        animation: wave4 2s linear 0s infinite;
                         border-radius: 50%;
                     }
 
-                    &::after {
-                        content: "";
-                        position: absolute;
-                        width: 100%;
-                        height: 100%;
-                        left: 0px;
-                        top: 0px;
-                        animation: wave4 1.8s linear 0.5s infinite;
-                        border-radius: 50%;
-                    }
+                    // &::after {
+                    //     content: "";
+                    //     position: absolute;
+                    //     width: 100%;
+                    //     height: 100%;
+                    //     left: 0px;
+                    //     top: 0px;
+                    //     animation: wave4 2s linear 0.3s infinite;
+                    //     border-radius: 50%;
+                    // }
 
                     i {
                         position: absolute;
                         bottom: -20px;
-                        left: 58%;
+                        left: 57.5%;
                         transform: translateX(-50%);
                         font-size: 28px;
                         color: #ffffff;
