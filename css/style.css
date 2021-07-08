@@ -1522,8 +1522,8 @@ html body .mainAnime .enterBtn .transCover {
 }
 html body .mainAnime .enterBtn .wrapper_3 {
   position: absolute;
-  width: 70px;
-  height: 70px;
+  width: auto;
+  height: auto;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -1532,27 +1532,18 @@ html body .mainAnime .enterBtn .wrapper_3 {
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
 }
-html body .mainAnime .enterBtn .wrapper_3::before {
-  content: "";
+html body .mainAnime .enterBtn .wrapper_3 i {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0px;
-  top: 0px;
-  -webkit-animation: wave4 1.8s linear 0s infinite;
-          animation: wave4 1.8s linear 0s infinite;
-  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 28px;
+  color: #ffffff;
 }
-html body .mainAnime .enterBtn .wrapper_3::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0px;
-  top: 0px;
-  -webkit-animation: wave4 1.8s linear 0.5s infinite;
-          animation: wave4 1.8s linear 0.5s infinite;
-  border-radius: 50%;
+html body .mainAnime .enterBtn .wrapper_3 i:nth-child(2) {
+  -webkit-animation: fingerShadow 1.5s linear 0s infinite;
+          animation: fingerShadow 1.5s linear 0s infinite;
 }
 
 @media screen and (max-width: 1670px) {
@@ -4266,42 +4257,6 @@ html body .mainAnime .enterBtn .wrapper_3::after {
     opacity: 0;
   }
 }
-@-webkit-keyframes wave4 {
-  0% {
-    border: solid 2px #ffffff;
-    -webkit-transform: scale(0);
-            transform: scale(0);
-  }
-  50% {
-    border: solid 2px #ffffff;
-    -webkit-transform: scale(0);
-            transform: scale(0);
-  }
-  100% {
-    opacity: 0;
-    border: solid 2px #ffffff;
-    -webkit-transform: scale(2.5);
-            transform: scale(2.5);
-  }
-}
-@keyframes wave4 {
-  0% {
-    border: solid 2px #ffffff;
-    -webkit-transform: scale(0);
-            transform: scale(0);
-  }
-  50% {
-    border: solid 2px #ffffff;
-    -webkit-transform: scale(0);
-            transform: scale(0);
-  }
-  100% {
-    opacity: 0;
-    border: solid 2px #ffffff;
-    -webkit-transform: scale(2.5);
-            transform: scale(2.5);
-  }
-}
 @-webkit-keyframes transCover_1 {
   0% {
     opacity: 0;
@@ -5004,5 +4959,29 @@ html body .mainAnime .enterBtn .wrapper_3::after {
     top: 0px;
     -webkit-transform: rotate(-135deg) scale(0.6);
             transform: rotate(-135deg) scale(0.6);
+  }
+}
+@-webkit-keyframes fingerShadow {
+  0% {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%) scale(2);
+            transform: translate(-50%, -50%) scale(2);
+  }
+}
+@keyframes fingerShadow {
+  0% {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%) scale(2);
+            transform: translate(-50%, -50%) scale(2);
   }
 }
