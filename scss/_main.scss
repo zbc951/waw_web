@@ -1528,8 +1528,8 @@ html {
                     }
 
                     &::after {
-                        left: -50px;
-                        top: -10px;
+                        left: -30px;
+                        top: -35px;
                         transform: rotate(-155deg) scale(0.5);
                         animation: floatTriangle_2-2 2.4s ease-in-out 0s infinite alternate;
                     }
@@ -1571,6 +1571,7 @@ html {
                     left: 50%;
                     transform: translate(-50%,-50%);
                     pointer-events: none;
+                    transition: 0.3s all;
 
                     &::before {
                         content: "";

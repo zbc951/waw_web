@@ -146,4 +146,4 @@ $(function(){
 
 setTimeout(function(){
     $('.enterBtn').removeClass('apper');
-},3000)
+},3400)
