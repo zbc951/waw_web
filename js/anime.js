@@ -1,8 +1,8 @@
 CSSPlugin.useSVGTransformAttr = true;
 
 var tmax_optionsGlobal = {
-	repeat: -1,
-	repeatDelay: 3,
+	repeat: 1,
+	repeatDelay: 5,
 	yoyo: true
 };
   
@@ -39,4 +39,14 @@ function getRandom(min, max) {
 
 $('.enterBtn').click(function(){
 	tl.play(5).repeat(1).yoyo(true);
+})
+
+$(function(){
+	var animeRe = function(){
+		setTimeout(function(){
+			tl.restart();
+			animeRe();
+		},10500)
+	}
+	animeRe();
 })
