@@ -1524,14 +1524,14 @@ html {
                     &::before {
                         left: -30px;
                         bottom: -30px;
-                        animation: floatTriangle_1-2 2s ease-in-out 0s infinite alternate;
+                        animation: floatTriangle_1-2 2s linear 0s infinite alternate;
                     }
 
                     &::after {
                         left: -30px;
                         top: -35px;
                         transform: rotate(-155deg) scale(0.5);
-                        animation: floatTriangle_2-2 2.4s ease-in-out 0s infinite alternate;
+                        animation: floatTriangle_2-2 1.8s linear 0s infinite alternate;
                     }
                 }
                 .wrapper_2 {
@@ -1540,14 +1540,14 @@ html {
                         right: -35px;
                         top: -30px;
                         transform: rotate(180deg) scale(0.8);
-                        animation: floatTriangle_3-2 3s ease-in-out 0s infinite alternate;
+                        animation: floatTriangle_3-2 1.8s linear 0s infinite alternate;
                     }
 
                     &::after {
                         right: -50px;
                         top: 0px;
                         transform: rotate(-135deg) scale(0.6);
-                        animation: floatTriangle_4-2 2s ease-in-out 0s infinite alternate;
+                        animation: floatTriangle_4-2 2s linear 0s infinite alternate;
                     }
                 }
 
@@ -1583,17 +1583,6 @@ html {
                         animation: wave4 2s linear 0s infinite;
                         border-radius: 50%;
                     }
-
-                    // &::after {
-                    //     content: "";
-                    //     position: absolute;
-                    //     width: 100%;
-                    //     height: 100%;
-                    //     left: 0px;
-                    //     top: 0px;
-                    //     animation: wave4 2s linear 0.3s infinite;
-                    //     border-radius: 50%;
-                    // }
 
                     i {
                         position: absolute;
