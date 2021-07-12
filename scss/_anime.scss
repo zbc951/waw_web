@@ -1399,21 +1399,10 @@
         transform: scale(0);
     }
 
-    50% {
-        border: solid 2px #ffffff;
-        transform: scale(0);
-    }
-
-    80% {
-        opacity: 0;
-        border: solid 2px #ffffff;
-        transform: scale(2.5);
-    }
-
     100% {
         opacity: 0;
         border: solid 2px #ffffff;
-        transform: scale(2.5);
+        transform: scale(1.5);
     }
 }
 
@@ -1446,144 +1435,14 @@
     }
 }
 
-//漂浮wrapper
-@keyframes floatTriangle_1 {
-    0% {
-        left: -30px;
-        bottom: -30px;
-    }
-
-    100% {
-        left: -25px;
-        bottom: -40px;
-        transform: rotate(-15deg);
-    }
-}
-@keyframes floatTriangle_1-2 {
-    0% {
-        left: -30px;
-        bottom: -30px;
-    }
-
-    50% {
-        left: -30px;
-        bottom: -30px;
-    }
-
-    100% {
-        left: -25px;
-        bottom: -40px;
-        transform: rotate(-15deg);
-    }
-}
-
-@keyframes floatTriangle_2 {
-    0% {
-        left: -30px;
-        top: -35px;
-        transform: rotate(-155deg) scale(0.5);
-    }
-
-    100% {
-        left: -35px;
-        top: -40px;
-        transform: rotate(-165deg) scale(0.5);
-    }
-}
-@keyframes floatTriangle_2-2 {
-    0% {
-        left: -30px;
-        top: -35px;
-        transform: rotate(-155deg) scale(0.5);
-    }
-
-    50% {
-        left: -30px;
-        top: -35px;
-        transform: rotate(-155deg) scale(0.5);
-    }
-
-    100% {
-        left: -40px;
-        top: -45px;
-        transform: rotate(-165deg) scale(0.5);
-    }
-}
-
-@keyframes floatTriangle_3 {
-    0% {
-        right: -35px;
-        top: -30px;
-        transform: rotate(180deg) scale(0.8);
-    }
-
-    100% {
-        right: -40px;
-        top: -35px;
-        transform: rotate(210deg) scale(0.6);
-    }
-}
-@keyframes floatTriangle_3-2 {
-    0% {
-        right: -35px;
-        top: -30px;
-        transform: rotate(180deg) scale(0.8);
-    }
-
-    50% {
-        right: -35px;
-        top: -30px;
-        transform: rotate(180deg) scale(0.8);
-    }
-
-    100% {
-        right: -40px;
-        top: -35px;
-        transform: rotate(210deg) scale(0.6);
-    }
-}
-
-@keyframes floatTriangle_4 {
-    0% {
-        right: -50px;
-        top: 0px;
-        transform: rotate(-135deg) scale(0.6);
-    }
-
-    100% {
-        right: -40px;
-        top: 15px;
-        transform: rotate(-120deg) scale(0.6);
-    }
-}
-@keyframes floatTriangle_4-2 {
-    0% {
-        right: -50px;
-        top: 0px;
-        transform: rotate(-135deg) scale(0.6);
-    }
-
-    50% {
-        right: -50px;
-        top: 0px;
-        transform: rotate(-135deg) scale(0.6);
-    }
-
-    100% {
-        right: -40px;
-        top: 15px;
-        transform: rotate(-120deg) scale(0.6);
-    }
-}
-
 //enterBtn 點擊後變化
 @keyframes disapperP {
     0% {
         opacity: 1;
-        font-size: 27px;
+        font-size: 24px;
     }
 
-    3% {
+    10% {
         opacity: 0;
         font-size: 12px;
     }
@@ -1594,194 +1453,208 @@
     }
 }
 
-@keyframes disapperTriangle_1 {
+//荷葉浮動
+@keyframes floatLeaf_1 {
     0% {
-        opacity: 1;
-        left: -30px;
-        bottom: -30px;
-        transform: scale(1);
+        transform: translate(0%,0%) rotate(0deg);
     }
 
-    3% {
-        opacity: 0;
-        left: 0px;
-        bottom: 0px;
-        transform: scale(0);
+    20% {
+        transform: translate(-10%,-50%) rotate(30deg);
     }
 
-    100% {
-        opacity: 0;
-        left: 0px;
-        bottom: 0px;
-        transform: scale(0);
-    }
-}
-
-@keyframes disapperTriangle_2 {
-    0% {
-        opacity: 1;
-        left: -50px;
-        top: -10px;
-        transform: rotate(-155deg) scale(0.5);
-    }
-
-    3% {
-        opacity: 0;
-        left: 0px;
-        top: 0px;
-        transform: rotate(-155deg) scale(0);
-    }
-
-    100% {
-        opacity: 0;
-        left: 0px;
-        top: 0px;
-        transform: rotate(-155deg) scale(0);
-    }
-}
-
-@keyframes disapperTriangle_3 {
-    0% {
-        opacity: 1;
-        right: -35px;
-        top: -30px;
-        transform: rotate(180deg) scale(0.8);
-    }
-
-    3% {
-        opacity: 0;
-        right: 0px;
-        top: 0px;
-        transform: rotate(180deg) scale(0);
-    }
-
-    100% {
-        opacity: 0;
-        right: 0px;
-        top: 0px;
-        transform: rotate(180deg) scale(0);
-    }
-}
-
-@keyframes disapperTriangle_4 {
-    0% {
-        opacity: 1;
-        right: -50px;
-        top: 0px;
-        transform: rotate(-135deg) scale(0.6);
-    }
-
-    3% {
-        opacity: 0;
-        right: 0px;
-        top: 0px;
-        transform: rotate(-135deg) scale(0);
-    }
-
-    100% {
-        opacity: 0;
-        right: 0px;
-        top: 0px;
-        transform: rotate(-135deg) scale(0);
-    }
-}
-
-//enterBtn 出場動畫
-@keyframes trangleJump_1 {
-    0% {
-        opacity: 0;
-        transform: scale(0);
-    }
-
-    58% {
-        opacity: 0;
-        left: -250px;
-        bottom: -200px;
-        transform: scale(0);
-    }
-
-    70% {
-        opacity: 1;
-        left: -30px;
-        bottom: -30px;
-        transform: scale(1);
-    }
-}
-
-@keyframes trangleJump_2 {
-    0% {
-        opacity: 0;
-        transform: scale(0);
+    30% {
+        transform: translate(-10%,-50%) rotate(30deg);
     }
 
     60% {
-        opacity: 0;
-        left: -100px;
-        top: -90px;
-        transform: rotate(-540deg) scale(0);
+        transform: translate(10%,30%) rotate(-15deg);
     }
 
-    70% {
-        opacity: 1;
-        left: -30px;
-        top: -35px;
-        transform: rotate(-155deg) scale(0.5);
-    }
-}
-
-@keyframes trangleJump_3 {
-    0% {
-        opacity: 0;
-        right: 0px;
-        top: 0px;
-        transform: rotate(-360deg) scale(0);
-    }
-
-    62% {
-        opacity: 0;
-        right: -100px;
-        top: -230px;
-        transform: rotate(-360deg) scale(0);
-    }
-
-    74% {
-        opacity: 1;
-        right: -35px;
-        top: -30px;
-        transform: rotate(180deg) scale(0.8);
-    }
-}
-
-@keyframes trangleJump_4 {
-    0% {
-        opacity: 0;
-        right: 0px;
-        top: 0px;
-        transform: rotate(-360deg) scale(0);
-    }
-
-    58% {
-        opacity: 0;
-        right: -90px;
-        top: 200px;
-        transform: rotate(-360deg) scale(0);
-    }
-
-    72% {
-        opacity: 1;
-        right: -50px;
-        top: 0px;
-        transform: rotate(-135deg) scale(0.6);
-    }
-}
-
-//finger動畫
-@keyframes fingerMove {
-    0% {
-        bottom: -20px;
+    80% {
+        transform: translate(10%,30%) rotate(-15deg);
     }
 
     100% {
-        bottom: 0px;
+        transform: translate(0%,0%) rotate(0deg);
+    }
+}
+
+@keyframes floatLeaf_2 {
+    0% {
+        transform: translate(0%,0%) rotate(-160deg);
+    }
+
+    33% {
+        transform: translate(20%,20%) rotate(-200deg);
+    }
+
+    50% {
+        transform: translate(20%,20%) rotate(-200deg);
+    }
+
+    75% {
+        transform: translate(10%,10%) rotate(-170deg);
+    }
+
+    100% {
+        transform: translate(0%,0%) rotate(-160deg);
+    }
+}
+
+@keyframes floatLeaf_3 {
+    0% {
+        transform: translate(0%,0%) rotate(120deg);
+    }
+
+    30% {
+        transform: translate(-100%,0%) rotate(90deg);
+    }
+
+    50% {
+        transform: translate(-40%,-50%) rotate(60deg);
+    }
+
+    80% {
+        transform: translate(-40%,-50%) rotate(60deg);
+    }
+
+    100% {
+        transform: translate(0%,0%) rotate(120deg);
+    }
+}
+
+@keyframes floatLeaf_4 {
+    0% {
+        transform: translate(0%,0%) rotate(70deg);
+    }
+
+    50% {
+        transform: translate(0%,0%) rotate(70deg);
+    }
+
+    100% {
+        transform: translate(50%,100%) rotate(10deg);
+    }
+}
+
+@keyframes floatLeaf_5 {
+    0% {
+        transform: translate(0%,0%) rotate(0deg);
+    }
+
+    33% {
+        transform: translate(-100%,-50%) rotate(70deg);
+    }
+
+    100% {
+        transform: translate(0%,0%) rotate(0deg);
+    }
+}
+
+@keyframes floatLeaf_6 {
+    0% {
+        transform: translate(0%,0%) rotate(-70deg);
+    }
+
+    33% {
+        transform: translate(50%,-50%) rotate(-45deg);
+    }
+
+    50% {
+        transform: translate(50%,-50%) rotate(-45deg);
+    }
+
+    75% {
+        transform: translate(100%,0%) rotate(-15deg);
+    }
+
+    100% {
+        transform: translate(0%,0%) rotate(-70deg);
+    }
+}
+
+@keyframes floatLeaf_7 {
+    0% {
+        transform: translate(0%,0%) rotate(90deg);
+    }
+
+    33% {
+        transform: translate(-50%,-50%) rotate(70deg);
+    }
+
+    67% {
+        transform: translate(-50%,-50%) rotate(70deg);
+    }
+
+    100% {
+        transform: translate(0%,0%) rotate(90deg);
+    }
+}
+
+@keyframes floatLeaf_8 {
+    0% {
+        transform: translate(0%,0%) rotate(20deg);
+    }
+
+    33% {
+        transform: translate(80%,-30%) rotate(-20deg);
+    }
+
+    50% {
+        transform: translate(120%,-50%) rotate(-40deg);
+    }
+
+    75% {
+        transform: translate(60%,-20%) rotate(-60deg);
+    }
+
+    100% {
+        transform: translate(0%,0%) rotate(20deg);
+    }
+}
+
+//enterBtn點擊消失
+@keyframes disapperLeaf_1 {
+    0% {
+        left: -60px;
+        bottom: -20px;
+        transform: scale(1);
+    }
+
+    30% {
+        opacity: 0;
+        left: 50%;
+        bottom: 50%;
+        transform: scale(0);
+    }
+
+    100% {
+        opacity: 0;
+        left: 50%;
+        bottom: 50%;
+        transform: scale(0);
+    }
+}
+
+@keyframes disapperLeaf_2 {
+    0% {
+        right: -30px;
+        top: -10px;
+        transform: rotate(-160deg) scale(1);
+    }
+
+    30% {
+        opacity: 0;
+        right: 50%;
+        top: 50%;
+        transform: rotate(-160deg) scale(0);
+    }
+
+    100% {
+        opacity: 0;
+        right: 50%;
+        top: 50%;
+        transform: rotate(-160deg) scale(0);
     }
 }

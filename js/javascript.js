@@ -109,6 +109,7 @@ $(function(){
 })
 
     //隱藏列達成條件
+
 $(function(){
     $(window).scroll(function () {
         var scrollVal = $(this).scrollTop();
@@ -121,6 +122,7 @@ $(function(){
 })
 
     //主物件hover時a跑版效果修正
+
 $(function(){
     $('.forWeb li,.forMobile li').hover(function(){
         $(this).addClass('hoverA');
@@ -134,6 +136,7 @@ $(function(){
 })
 
     //transCover觸發
+    
 $(function(){
     $('.enterBtn').click(function(){
         $(this).addClass('trans');
@@ -143,7 +146,3 @@ $(function(){
         },700)
     })
 })
-
-setTimeout(function(){
-    $('.enterBtn').removeClass('apper');
-},3400)

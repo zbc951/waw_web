@@ -973,6 +973,7 @@ html {
             height: 100%;
             background: #165f1b;
             z-index: 100;
+            overflow: hidden;
 
             .dropBox {
                 position: absolute;
@@ -1364,6 +1365,99 @@ html {
                 }
             }
 
+            .leaf {
+                background: url('../images/荷葉.png') no-repeat;
+                background-size: 100%;
+                background-position-y: 100%;
+                position: absolute;
+
+                &:nth-child(1) {
+                    width: 33px;
+                    height: 33px;
+                    top: 200px;
+                    left: 180px;
+                    transform: rotate(120deg);
+                    animation: floatLeaf_3 10s ease-in-out 0s infinite;
+                }
+
+                &:nth-child(2) {
+                    width: 47px;
+                    height: 47px;
+                    top: 170px;
+                    left: 250px;
+                    transform: rotate(70deg);
+                    animation: floatLeaf_4 8s ease-in-out 0s infinite alternate;
+                }
+
+                &:nth-child(3) {
+                    width: 70px;
+                    height: 70px;
+                    top: 140px;
+                    right: 170px;
+                    transform: rotate(0deg);
+                    animation: floatLeaf_5 8s ease-in-out 0s infinite alternate;
+                }
+
+                &:nth-child(4) {
+                    width: 80px;
+                    height: 80px;
+                    bottom: 200px;
+                    right: 80px;
+                    transform: rotate(-70deg);
+                    animation: floatLeaf_6 10s ease-in-out 0s infinite;
+                }
+
+                &:nth-child(5) {
+                    width: 24px;
+                    height: 24px;
+                    bottom: 240px;
+                    left: 150px;
+                    transform: rotate(-120deg);
+                }
+
+                &:nth-child(6) {
+                    width: 60px;
+                    height: 60px;
+                    bottom: 200px;
+                    left: 380px;
+                    transform: rotate(90deg);
+                    animation: floatLeaf_7 8s ease-in-out 0s infinite;
+                }
+
+                &:nth-child(7) {
+                    width: 70px;
+                    height: 70px;
+                    bottom: 100px;
+                    right: 300px;
+                    transform: rotate(20deg);
+                    animation: floatLeaf_8 10s ease-in-out 0s infinite;
+                }
+
+                &:nth-child(8) {
+                    width: 35px;
+                    height: 35px;
+                    bottom: 260px;
+                    right: 170px;
+                    transform: rotate(-0deg);
+                }
+
+                &:nth-child(9) {
+                    width: 30px;
+                    height: 30px;
+                    top: 270px;
+                    right: 370px;
+                    transform: rotate(45deg);
+                }
+
+                &:nth-child(10) {
+                    width: 90px;
+                    height: 90px;
+                    bottom: -30px;
+                    left: 190px;
+                    transform: rotate(25deg);
+                }
+            }
+
             svg {
                 position: absolute;
                 width: 1460px;
@@ -1390,43 +1484,28 @@ html {
 
             .enterBtn {
                 position: absolute;
-                width: auto;
-                height: auto;
+                width: 80px;
+                height: 80px;
                 background: transparent;
                 left: 50%;
                 transform: translateX(-50%);
                 bottom: 30%;
+                border-radius: 50%;
 
-                &:hover {
-                        
+                &:hover,&:active,&.active {
+                    
                     p {
-                        opacity: 1;
-                        font-size: 24px;
-                        transform: scale(1);
+
+                        &:nth-of-type(1) {
+                            opacity: 0;
+                        }
+
+                        &:nth-of-type(2) {
+                            opacity: 1;
+                        }
                     }
 
                     .wrapper_1 {
-                    
-                        &::before {
-                            animation: floatTriangle_1 1s ease-in-out 0s infinite alternate;
-                        }
-    
-                        &::after {
-                            animation: floatTriangle_2 1.2s ease-in-out 0s infinite alternate;
-                        }
-                    }
-                    .wrapper_2 {
-    
-                        &::before {
-                            animation: floatTriangle_3 1.5s ease-in-out 0s infinite alternate;
-                        }
-    
-                        &::after {
-                            animation: floatTriangle_4 1s ease-in-out 0s infinite alternate;
-                        }
-                    }
-
-                    .wrapper_3 {
                         opacity: 0;
                     }
                 }
@@ -1434,120 +1513,42 @@ html {
                 &.trans {
 
                     p {
-                        animation: disapperP 10s linear 0s;
-                    }
-
-                    .wrapper_1 {
-
-                        &::before {
-                            animation: disapperTriangle_1 10s linear 0s;
-                        }
-
-                        &::after {
-                            animation: disapperTriangle_2 10s linear 0s;
-                        }
-                    }
-                    .wrapper_2 {
-
-                        &::before {
-                            animation: disapperTriangle_3 10s linear 0s;
-                        }
-
-                        &::after {
-                            animation: disapperTriangle_4 10s linear 0s;
-                        }
+                        animation: disapperP 2s linear 0s;
                     }
 
                     .transCover {
                         display: block;
                         animation: transCover_1 10s linear 0s;
                     }
-                }
 
-                &.apper {
-                    
                     .wrapper_1 {
-                        
-                        &::before {
-                            animation: trangleJump_1 4s ease-out 0s;
-                        }
-    
-                        &::after {
-                            animation: trangleJump_2 4s ease-out 0s;
-                        }
-                    }
-                    .wrapper_2 {
-    
-                        &::before {
-                            animation: trangleJump_3 4s ease-out 0s;
-                        }
-    
-                        &::after {
-                            animation: trangleJump_4 4s ease-out 0s;
-                        }
+                        opacity: 0;
                     }
 
-                    .wrapper_3 {
-                        opacity: 0;
+                    .wrapper_2 {
+
+                        &::before {
+                            animation: disapperLeaf_1 1s linear 0s;
+                        }
+
+                        &::after {
+                            animation: disapperLeaf_2 1s linear 0s;
+                        }
                     }
                 }
 
                 p {
-                    opacity: 0;
-                    transform: scale(0.5);
                     color: #ffffff;
-                    font-size: 12px;
-                    transition: 0.3s all;
-                }
-
-                .wrapper_1,.wrapper_2 {
-                    display: block;
-                    width: 100%;
-                    height: 100%;
+                    font-size: 24px;
                     position: absolute;
-                    top: 0px;
-                    left: 0px;
-                    z-index: 2;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    white-space: nowrap;
+                    transition: 0.5s all;
 
-                    &::before,&::after {
-                        content: "";
-                        position: absolute;
-                        width: 49px;
-                        height: 36px;
-                        background: url('../images/triangle_1.png') no-repeat;
-                        background-size: 100%;
-                        pointer-events: none;
-                    }
-                }
-                .wrapper_1 {
-                        
-                    &::before {
-                        left: -30px;
-                        bottom: -30px;
-                        animation: floatTriangle_1-2 2s linear 0s infinite alternate;
-                    }
-
-                    &::after {
-                        left: -30px;
-                        top: -35px;
-                        transform: rotate(-155deg) scale(0.5);
-                        animation: floatTriangle_2-2 1.8s linear 0s infinite alternate;
-                    }
-                }
-                .wrapper_2 {
-
-                    &::before {
-                        right: -35px;
-                        top: -30px;
-                        transform: rotate(180deg) scale(0.8);
-                        animation: floatTriangle_3-2 1.8s linear 0s infinite alternate;
-                    }
-
-                    &::after {
-                        right: -50px;
-                        top: 0px;
-                        transform: rotate(-135deg) scale(0.6);
-                        animation: floatTriangle_4-2 2s linear 0s infinite alternate;
+                    &:nth-of-type(2) {
+                        opacity: 0;
                     }
                 }
 
@@ -1563,10 +1564,11 @@ html {
                     height: 100px;
                 }
 
-                .wrapper_3 {
+                .wrapper_1 {
+                    display: block;
                     position: absolute;
-                    width: 70px;
-                    height: 70px;
+                    width: 100%;
+                    height: 100%;
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%,-50%);
@@ -1580,18 +1582,49 @@ html {
                         height: 100%;
                         left: 0px;
                         top: 0px;
-                        animation: wave4 2s linear 0s infinite;
+                        animation: wave4 1.2s linear 0s infinite;
                         border-radius: 50%;
                     }
 
-                    i {
+                    &::after {
+                        content: "";
                         position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        left: 0px;
+                        top: 0px;
+                        animation: wave4 1.2s linear 0.4s infinite;
+                        border-radius: 50%;
+                    }
+                }
+
+                .wrapper_2 {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+                    pointer-events: none;
+
+                    &::before,&::after {
+                        content: "";
+                        position: absolute;
+                        width: 57px;
+                        height: 57px;
+                        background: url('../images/荷葉.png') no-repeat;
+                        background-size: 100%;
+                    }
+                    &::before {
+                        left: -60px;
                         bottom: -20px;
-                        left: 57.5%;
-                        transform: translateX(-50%);
-                        font-size: 28px;
-                        color: #ffffff;
-                        animation: fingerMove 1s linear 0s infinite alternate;
+                        animation: floatLeaf_1 10s ease-in-out 0s infinite;
+                    }
+                    &::after {
+                        right: -30px;
+                        top: -10px;
+                        width: 40px;
+                        height: 40px;
+                        transform: rotate(-160deg);
+                        animation: floatLeaf_2 10s ease-in-out 0s infinite;
                     }
                 }
             }
