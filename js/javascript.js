@@ -146,3 +146,17 @@ $(function(){
         },700)
     })
 })
+
+    //手機版調整
+function isMobile() {
+
+    try{ document.createEvent("TouchEvent"); return true; }
+
+    catch(e){ return false;}
+
+}
+$(function(){
+    if(isMobile()){
+        $('.svgWrapper').css('width','1100')
+    }
+})
