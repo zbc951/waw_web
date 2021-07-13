@@ -1458,8 +1458,8 @@ html body .mainAnime .enterBtn:hover .wrapper_1::after, html body .mainAnime .en
           animation: wave4 5s linear 2.5s infinite;
 }
 html body .mainAnime .enterBtn:hover .wrapper_2, html body .mainAnime .enterBtn:active .wrapper_2, html body .mainAnime .enterBtn.active .wrapper_2 {
-  -webkit-animation: aroundLeaf_1 10s linear 0s infinite;
-          animation: aroundLeaf_1 10s linear 0s infinite;
+  -webkit-animation: aroundLeaf_1 8s linear 0s infinite;
+          animation: aroundLeaf_1 8s linear 0s infinite;
 }
 html body .mainAnime .enterBtn:hover .wrapper_2::before, html body .mainAnime .enterBtn:active .wrapper_2::before, html body .mainAnime .enterBtn.active .wrapper_2::before {
   left: -60px;
