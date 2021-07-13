@@ -970,7 +970,9 @@ html {
         .mainAnime {
             position: fixed;
             width: 100%;
+            min-width: 1400px;
             height: 100%;
+            min-height: 937px;
             background: #165f1b;
             z-index: 100;
             overflow: hidden;
@@ -1366,99 +1368,61 @@ html {
             }
 
             .leaf {
-                background: url('../images/荷葉.png') no-repeat;
-                background-size: 100%;
-                background-position-y: 100%;
                 position: absolute;
-
+                
                 &:nth-child(1) {
-                    width: 33px;
-                    height: 33px;
-                    top: 200px;
-                    left: 180px;
-                    transform: rotate(120deg);
-                    animation: floatLeaf_3 10s ease-in-out 0s infinite;
+                    width: 847px;
+                    height: 832px;
+                    background: url('../images/leaf_1.png') no-repeat;
+                    top: -485px;
+                    left: -395px;
+                    animation: floatLeaf_3 10s linear 0s infinite;
                 }
 
                 &:nth-child(2) {
-                    width: 47px;
-                    height: 47px;
-                    top: 170px;
-                    left: 250px;
-                    transform: rotate(70deg);
-                    animation: floatLeaf_4 8s ease-in-out 0s infinite alternate;
+                    width: 354px;
+                    height: 298px;
+                    background: url('../images/leaf_2.png') no-repeat;
+                    right: -200px;
+                    bottom: 30px;
                 }
 
                 &:nth-child(3) {
-                    width: 70px;
-                    height: 70px;
-                    top: 140px;
-                    right: 170px;
-                    transform: rotate(0deg);
-                    animation: floatLeaf_5 8s ease-in-out 0s infinite alternate;
+                    width: 211px;
+                    height: 201px;
+                    background: url('../images/leaf_3.png') no-repeat;
+                    right: 400px;
+                    top: 103px;
+                    animation: floatLeaf_4 10s ease-in-out 0s infinite;
                 }
 
                 &:nth-child(4) {
-                    width: 80px;
-                    height: 80px;
-                    bottom: 200px;
-                    right: 80px;
-                    transform: rotate(-70deg);
-                    animation: floatLeaf_6 10s ease-in-out 0s infinite;
+                    width: 249px;
+                    height: 232px;
+                    background: url('../images/leaf_4.png') no-repeat;
+                    left: 580px;
+                    top: -90px;
                 }
 
                 &:nth-child(5) {
-                    width: 24px;
-                    height: 24px;
-                    bottom: 240px;
-                    left: 150px;
-                    transform: rotate(-120deg);
+                    width: 567px;
+                    height: 558px;
+                    background: url('../images/leaf_5.png') no-repeat;
+                    right: -300px;
+                    top: 30px;
                 }
 
                 &:nth-child(6) {
-                    width: 60px;
-                    height: 60px;
-                    bottom: 200px;
-                    left: 380px;
-                    transform: rotate(90deg);
-                    animation: floatLeaf_7 8s ease-in-out 0s infinite;
-                }
-
-                &:nth-child(7) {
-                    width: 70px;
-                    height: 70px;
-                    bottom: 100px;
-                    right: 300px;
-                    transform: rotate(20deg);
-                    animation: floatLeaf_8 10s ease-in-out 0s infinite;
-                }
-
-                &:nth-child(8) {
-                    width: 35px;
-                    height: 35px;
-                    bottom: 260px;
-                    right: 170px;
-                    transform: rotate(-0deg);
-                }
-
-                &:nth-child(9) {
-                    width: 30px;
-                    height: 30px;
-                    top: 270px;
-                    right: 370px;
-                    transform: rotate(45deg);
-                }
-
-                &:nth-child(10) {
-                    width: 90px;
-                    height: 90px;
-                    bottom: -30px;
-                    left: 190px;
-                    transform: rotate(25deg);
+                    width: 540px;
+                    height: 526px;
+                    background: url('../images/leaf_6.png') no-repeat;
+                    left: 70px;
+                    bottom: -270px;
+                    animation: floatLeaf_5 20s linear 0s infinite;
                 }
             }
 
-            svg {
+            .svgWrapper {
                 position: absolute;
                 width: 1460px;
                 height: 234px;
@@ -1506,7 +1470,32 @@ html {
                     }
 
                     .wrapper_1 {
-                        opacity: 0;
+                        width: 150px;
+                        height: 150px;
+                        
+                        &::before {
+                            animation: wave4 5s linear 0s infinite;
+                        }
+
+                        &::after {
+                            animation: wave4 5s linear 2.5s infinite;
+                        }
+                    }
+
+                    .wrapper_2 {
+                        animation: aroundLeaf_1 10s linear 0s infinite;
+
+                        &::before {
+                            left: -60px;
+                            bottom: -30px;
+                            animation: aroundLeaf_1 10s linear 0s infinite;
+                        }
+
+                        &::after {
+                            right: -60px;
+                            top: -30px;
+                            animation: aroundLeaf_2 10s linear 0s infinite;
+                        } 
                     }
                 }
 
@@ -1582,7 +1571,7 @@ html {
                         height: 100%;
                         left: 0px;
                         top: 0px;
-                        animation: wave4 1.2s linear 0s infinite;
+                        animation: wave4 1.5s linear 0s infinite;
                         border-radius: 50%;
                     }
 
@@ -1593,7 +1582,7 @@ html {
                         height: 100%;
                         left: 0px;
                         top: 0px;
-                        animation: wave4 1.2s linear 0.4s infinite;
+                        animation: wave4 1.5s linear 0.5s infinite;
                         border-radius: 50%;
                     }
                 }
@@ -1612,6 +1601,7 @@ html {
                         height: 57px;
                         background: url('../images/荷葉.png') no-repeat;
                         background-size: 100%;
+                        transition: 0.3s all;
                     }
                     &::before {
                         left: -60px;

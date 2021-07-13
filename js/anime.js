@@ -7,7 +7,7 @@ var tmax_optionsGlobal = {
 };
   
 var tl = new TimelineMax(tmax_optionsGlobal),
-	path = 'svg *',
+	path = '.svgWrapper *',
 	stagger_val = 0.00125,
 	duration = 2,
 	delay = 1;
@@ -37,9 +37,9 @@ function getRandom(min, max) {
     return Math.random() * (max - min) + min;
 }
 
-$('.enterBtn').click(function(){
-	tl.play(5).repeat(1).yoyo(true);
-})
+// $('.enterBtn').click(function(){
+// 	tl.play(5).repeat(1).yoyo(true);
+// })
 
 $(function(){
 	var animeRe = function(){
