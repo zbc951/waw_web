@@ -159,6 +159,6 @@ function isMobile() {
 }
 $(function(){
     if(isMobile()){
-        $('.svgWrapper').css('width','1100')
+        $('.svgWrapper').css('width','900')
     }
 })
