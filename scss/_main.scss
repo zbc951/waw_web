@@ -29,10 +29,14 @@ html {
             width: 100%;
             min-width: 1100px;
             height: 90px;
-            position: fixed;
+            position: absolute;
             top: 0px;
             left: 0px;
             z-index: 5;
+
+            &.scroll {
+                position: fixed;
+            }
 
             article {
                 width: 90%;
@@ -1683,6 +1687,13 @@ html {
         
         body {
 
+            .mainAnime {
+                
+                .svgWrapper {
+                    width: 1100px;
+                }
+            }
+
             main {
 
                 .mainBox {
@@ -1804,6 +1815,13 @@ html {
     html {
         
         body {
+
+            .mainAnime {
+                
+                .svgWrapper {
+                    width: 800px;
+                }
+            }
 
             main {
 

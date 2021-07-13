@@ -115,8 +115,10 @@ $(function(){
         var scrollVal = $(this).scrollTop();
         if(scrollVal > 1){
                 $(".hideBar").addClass('display');
+                $('header').addClass('scroll');
         } else{
                 $(".hideBar").removeClass('display');
+                $('header').removeClass('scroll');
         };
     })
 })
